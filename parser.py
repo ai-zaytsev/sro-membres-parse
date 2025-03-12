@@ -39,7 +39,7 @@ class AsyncSroParser:
                 resp.raise_for_status()
                 data_json = await resp.json()
 
-            total_pages = data_json["data"]["countPages"]
+            total_pages = int(data_json["data"]["countPages"])
 
             # Если указано max_pages, ограничиваемся им
             if max_pages is not None:
