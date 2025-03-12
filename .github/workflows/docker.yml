@@ -2,6 +2,12 @@ name: Build and push Docker image
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'README.md'
+      - 'README'
+      - 'readme.md'
+      - 'readme'
+      - 'docs/**'
 
 jobs:
   build_and_push:
