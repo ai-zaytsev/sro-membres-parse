@@ -18,7 +18,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/username/sro_parser.git
+git clone https://github.com/ai-zaytsev/sro-membres-parse.git
 cd sro_parser
 ```
 
